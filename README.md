@@ -42,20 +42,20 @@
 
 1. En el menú lateral, selecciona **"Permissions"**.
 2. Activa el permiso para **"Dirección completa"** (`alexa::devices:all:address:full:read`).
-3. Haz clic en **"Save Permissions"**.
+3. También debes habilitar el switch de "Full Adress".
+4. Haz clic en **"Save Permissions"**.
 
 #### Paso 4: Agregar la Clave de API de Google Maps
 
-1. En la pestaña **"Code"**, expande la carpeta **"Environment Variables"**.
-2. Haz clic en **"Add"** para agregar una nueva variable de entorno.
-3. Ingresa `GOOGLE_API_KEY` como clave y tu clave de API de Google Maps como valor.
-4. Haz clic en **"Save"**.
+1. En la pestaña **"Code"**, crea un archivo **".env"** en la raíz del proyecto.
+2. Ingresa `GOOGLE_API_KEY` como clave y tu clave de API de Google Maps como valor.
+3. Haz clic en **"Save"**.
 
 #### Paso 5: Reemplazar el Código de la Skill
 
 1. En la pestaña **"Code"**, abre el archivo `lambda_function.py`.
-2. Reemplaza el contenido de `lambda_function.py` con el código de tu Skill.
-3. Si tienes un archivo `requirements.txt`, reemplázalo también con tus dependencias (por ejemplo, `requests`).
+2. Reemplaza el contenido de `lambda_function.py` con el código del repositorio.
+3. Rellena `requirements.txt` con el código del repositorio.
 4. Haz clic en **"Save"** y luego en **"Deploy"** para desplegar el código.
 
 #### Paso 6: Probar la Skill
